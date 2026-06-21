@@ -1,29 +1,60 @@
-body {
+body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    margin:0;
+    padding:0;
 }
 
-.container {
-    width: 400px;
-    margin: 80px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+.container{
+    width:420px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
+h1{
+    color:#0f172a;
 }
 
-button {
-    padding: 10px 20px;
-    cursor: pointer;
+input{
+    width:90%;
+    padding:12px;
+    margin:15px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
 }
 
-#result {
-    margin-top: 20px;
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.progress-container{
+    width:100%;
+    background:#ddd;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+#progress-bar{
+    height:20px;
+    width:0%;
+    border-radius:10px;
+    transition:0.5s;
+}
+
+#result{
+    margin-top:20px;
 }
