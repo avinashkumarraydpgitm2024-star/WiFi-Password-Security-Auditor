@@ -22,20 +22,20 @@ function checkPassword() {
     ];
 
     if (commonPasswords.includes(password.toLowerCase())) {
-        strength = "Very Weak";
+        strength = "🔴 Very Weak";
         score = 0;
         recommendation = "Avoid common passwords. Use a unique Wi-Fi password.";
     }
     else if (score <= 40) {
-        strength = "Weak";
+        strength = "🔴 Weak";
         recommendation = "Add uppercase letters, numbers and symbols.";
     }
     else if (score <= 80) {
-        strength = "Medium";
+        strength = "🟡 Medium";
         recommendation = "Improve password complexity for better security.";
     }
     else {
-        strength = "Strong";
+        strength = "🟢 Strong";
         recommendation = "Excellent! Your Wi-Fi password is secure.";
     }
 
@@ -47,4 +47,18 @@ function checkPassword() {
 
     document.getElementById("recommendation").innerHTML =
         recommendation;
+
+    let bar = document.getElementById("progress-bar");
+
+    bar.style.width = score + "%";
+
+    if(score <= 40){
+        bar.style.background = "red";
+    }
+    else if(score <= 80){
+        bar.style.background = "orange";
+    }
+    else{
+        bar.style.background = "green";
+    }
 }
