@@ -25,6 +25,18 @@ Wi-Fi Password Security Auditor is a cybersecurity tool that analyzes Wi-Fi pass
 ## Project Scope
 This project helps users improve wireless network security by auditing Wi-Fi passwords and identifying vulnerabilities that could be exploited by attackers.
 
+## Output
+The application successfully analyzes Wi-Fi passwords and provides:
 
+- Password Strength Rating
+- Security Score
+- Security Recommendations
+- Common Password Detection
+
+## Author
+Avinash Kumar Ray
+
+## Intern ID
+CCTTS169
 
 
