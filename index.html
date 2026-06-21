@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wi-Fi Password Security Auditor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Wi-Fi Password Security Auditor</h1>
+    <h1>🔐 Wi-Fi Password Security Auditor</h1>
 
     <input type="password" id="password" placeholder="Enter Wi-Fi Password">
 
     <button onclick="checkPassword()">Audit Password</button>
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
 
     <h2 id="result"></h2>
     <h3 id="score"></h3>
